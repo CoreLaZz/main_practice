@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   provider: ^6.0.3
   intl: ^0.18.0
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -22,3 +22,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
+
+flutter_intl:
+  enabled: true
+  arb_dir: lib/l10n
+  output_dir: lib/l10n/generated
+
+scripts:
+  l10n:
+    - dart run merge_and_generate.dart

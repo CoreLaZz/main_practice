@@ -1,6 +1,6 @@
 // lib/features/setting/presentation/screen/language_selection_page.dart
 import 'package:flutter/material.dart';
-import 'package:main_practice/generated/l10n.dart';
+import 'package:main_practice/l10n/generated/l10n.dart';
 import 'package:main_practice/locale_provider.dart';
 import 'package:provider/provider.dart';
 

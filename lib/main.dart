@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:main_practice/features/widgets/nav_bottom.dart';
+import 'package:main_practice/l10n/generated/l10n.dart';
 import 'package:provider/provider.dart';
 
-import 'generated/l10n.dart';
 import 'locale_provider.dart';
 
 void main() {

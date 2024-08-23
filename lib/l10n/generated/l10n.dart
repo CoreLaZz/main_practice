@@ -51,6 +51,16 @@ class S {
   }
 
   /// `Home`
+  String get home_nav {
+    return Intl.message(
+      'Home',
+      name: 'home_nav',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
   String get home_title {
     return Intl.message(
       'Home',
@@ -65,16 +75,6 @@ class S {
     return Intl.message(
       'Welcome to Home Screen!',
       name: 'home_welcome',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Settings`
-  String get settings_title {
-    return Intl.message(
-      'Settings',
-      name: 'settings_title',
       desc: '',
       args: [],
     );
@@ -110,11 +110,31 @@ class S {
     );
   }
 
+  /// `Product`
+  String get product_nav {
+    return Intl.message(
+      'Product',
+      name: 'product_nav',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Home`
-  String get home_nav {
+  String get product_title {
     return Intl.message(
       'Home',
-      name: 'home_nav',
+      name: 'product_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to Home Screen!`
+  String get product_welcome {
+    return Intl.message(
+      'Welcome to Home Screen!',
+      name: 'product_welcome',
       desc: '',
       args: [],
     );
@@ -125,6 +145,16 @@ class S {
     return Intl.message(
       'Setting',
       name: 'setting_nav',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings_title {
+    return Intl.message(
+      'Settings',
+      name: 'settings_title',
       desc: '',
       args: [],
     );

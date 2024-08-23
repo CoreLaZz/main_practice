@@ -1,7 +1,8 @@
 // lib/features/widgets/nav_bottom_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:main_practice/generated/l10n.dart';
+import 'package:main_practice/features/product/presentation/screen/product_screens.dart';
+import 'package:main_practice/l10n/generated/l10n.dart';
 import 'package:main_practice/features/home/presentation/screen/home_screens.dart';
 import 'package:main_practice/features/setting/presentation/screen/setting_screens.dart';
 
@@ -15,6 +16,7 @@ class _NavBottomPageState extends State<NavBottomPage> {
 
   final List<Widget> _pages = [
     HomeScreen(),
+    ProductScreen(),
     SettingScreen(),
   ];
 
@@ -31,11 +33,15 @@ class _NavBottomPageState extends State<NavBottomPage> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home_rounded),
             label: S.of(context).home_nav, // Localized string for home
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
+            icon: Icon(Icons.shopping_cart_rounded),
+            label: S.of(context).home_nav, // Localized string for home
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.more_horiz),
             label: S.of(context).setting_nav, // Localized string for settings
           ),
         ],
