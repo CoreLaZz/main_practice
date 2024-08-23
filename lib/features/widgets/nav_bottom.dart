@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:main_practice/features/product/presentation/screen/product_screens.dart';
-import 'package:main_practice/l10n/generated/l10n.dart';
+import 'package:main_practice/localization/l10n/generated/l10n.dart';
 import 'package:main_practice/features/home/presentation/screen/home_screens.dart';
 import 'package:main_practice/features/setting/presentation/screen/setting_screens.dart';
 
@@ -38,7 +38,7 @@ class _NavBottomPageState extends State<NavBottomPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart_rounded),
-            label: S.of(context).home_nav, // Localized string for home
+            label: S.of(context).product_nav, // Localized string for home
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.more_horiz),

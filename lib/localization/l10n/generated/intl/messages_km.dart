@@ -30,9 +30,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "khmer": MessageLookupByLibrary.simpleMessage("ខ្មែរ"),
         "language": MessageLookupByLibrary.simpleMessage("ភាសា"),
         "product_nav": MessageLookupByLibrary.simpleMessage("ផលិតផល"),
-        "product_title": MessageLookupByLibrary.simpleMessage("ទំព័រ"),
-        "product_welcome":
-            MessageLookupByLibrary.simpleMessage("សូមស្វាគមន៍មកកាន់ទំព័រដើម!"),
+        "product_title": MessageLookupByLibrary.simpleMessage("ផលិតផល"),
+        "product_welcome": MessageLookupByLibrary.simpleMessage(
+            "សូមស្វាគមន៍មកកាន់ផ្ទាំងផលិតផល!"),
         "setting_nav": MessageLookupByLibrary.simpleMessage("កំណត់"),
         "settings_title": MessageLookupByLibrary.simpleMessage("ការកំណត់")
       };

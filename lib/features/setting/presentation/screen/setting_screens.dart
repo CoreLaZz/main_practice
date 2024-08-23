@@ -1,7 +1,7 @@
 // lib/features/setting/presentation/screen/setting_screens.dart
 import 'package:flutter/material.dart';
 import 'package:main_practice/features/setting/presentation/screen/setting_language_screen.dart';
-import 'package:main_practice/l10n/generated/l10n.dart';
+import 'package:main_practice/localization/l10n/generated/l10n.dart';
 
 class SettingScreen extends StatelessWidget {
   @override

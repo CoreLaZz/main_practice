@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:main_practice/features/widgets/nav_bottom.dart';
-import 'package:main_practice/l10n/generated/l10n.dart';
+import 'package:main_practice/localization/l10n/generated/l10n.dart';
 import 'package:provider/provider.dart';
 
-import 'locale_provider.dart';
+import 'localization/script/locale_provider.dart';
 
 void main() {
   runApp(
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Main Practice',
       locale: localeProvider.locale,
-      localizationsDelegates: [
+      localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,

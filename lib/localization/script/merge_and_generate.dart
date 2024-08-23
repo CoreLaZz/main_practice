@@ -5,7 +5,7 @@ Future<void> main() async {
   print('Merging ARB files...');
   final mergeProcess = await Process.start(
     'dart',
-    ['run', 'merge_arb.dart'],
+    ['run', 'lib/localization/script/merge_arb.dart'],
     mode: ProcessStartMode.inheritStdio,
   );
   await mergeProcess.exitCode;

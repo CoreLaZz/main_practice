@@ -1,14 +1,14 @@
 {
   "@@locale": "en",
-  "home_nav": "Home",
-  "home_title": "Home",
-  "home_welcome": "Welcome to Home Screen!",
   "language": "Language",
   "english": "English",
   "khmer": "Khmer",
+  "home_nav": "Home",
+  "home_title": "Home",
+  "home_welcome": "Welcome to Home Screen!",
   "product_nav": "Product",
-  "product_title": "Home",
-  "product_welcome": "Welcome to Home Screen!",
+  "product_title": "Products",
+  "product_welcome": "Welcome to Product Screen!",
   "setting_nav": "Setting",
   "settings_title": "Settings"
 }
