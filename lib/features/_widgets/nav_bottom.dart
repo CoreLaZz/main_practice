@@ -16,8 +16,8 @@ class _NavBottomPageState extends State<NavBottomPage> {
   final List<Widget> _pages = [
     HomeScreen(),
     ProductScreen(),
-    SettingScreen(),
     ProfileScreen(),
+    SettingScreen(),
   ];
 
   @override

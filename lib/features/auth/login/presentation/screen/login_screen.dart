@@ -14,10 +14,27 @@ class _LoginScreenState extends State<LoginScreen> {
   String? _errorMessage;
 
   Future<void> _login() async {
+    final email = _emailController.text.trim();
+    final password = _passwordController.text.trim();
+
+    if (email.isEmpty) {
+      setState(() {
+        _errorMessage = 'Please enter your email';
+      });
+      return;
+    }
+
+    if (password.isEmpty) {
+      setState(() {
+        _errorMessage = 'Please enter your password';
+      });
+      return;
+    }
+
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: _emailController.text.trim(),
-        password: _passwordController.text.trim(),
+        email: email,
+        password: password,
       );
       Navigator.pushReplacement(
         context,
@@ -32,33 +49,64 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
+
     return Scaffold(
-      appBar: AppBar(title: Text("Login")),
-      body: Padding(
+      appBar: AppBar(
+        title: Text("Login"),
+        backgroundColor: isDarkMode ? Colors.black : Colors.white,
+        foregroundColor: isDarkMode ? Colors.white : Colors.black,
+      ),
+      body: Container(
+        color: isDarkMode ? Colors.black : Colors.white,
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             if (_errorMessage != null)
-              Text(
-                _errorMessage!,
-                style: TextStyle(color: Colors.red),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 16.0),
+                child: Text(
+                  _errorMessage!,
+                  style: TextStyle(color: Colors.red),
+                ),
               ),
-            TextFormField(
+            TextField(
               controller: _emailController,
-              decoration: InputDecoration(labelText: "Email"),
+              decoration: InputDecoration(
+                labelText: "Email",
+                filled: true,
+                fillColor: isDarkMode ? Colors.grey[800] : Colors.grey[200],
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: BorderSide(color: Colors.grey), // Gray border
+                ),
+              ),
               keyboardType: TextInputType.emailAddress,
             ),
-            TextFormField(
+            SizedBox(height: 16),
+            TextField(
               controller: _passwordController,
-              decoration: InputDecoration(labelText: "Password"),
+              decoration: InputDecoration(
+                labelText: "Password",
+                filled: true,
+                fillColor: isDarkMode ? Colors.grey[800] : Colors.grey[200],
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: BorderSide(color: Colors.grey), // Gray border
+                ),
+              ),
               obscureText: true,
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: _login,
               child: Text("Login"),
+              style: ElevatedButton.styleFrom(
+                minimumSize: Size(double.infinity, 48), // Full-width button
+              ),
             ),
+            SizedBox(height: 16),
             TextButton(
               child: Text("Don't have an account? Register"),
               onPressed: () {
