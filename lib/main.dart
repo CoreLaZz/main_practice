@@ -2,9 +2,13 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+<<<<<<< HEAD
 import 'package:main_practice/features/_widgets/nav_bottom.dart';
 import 'package:main_practice/features/auth/login/presentation/screen/login_screen.dart';
 import 'package:main_practice/firebase_options.dart';
+=======
+import 'package:main_practice/features/custom/widgets/nav_bottom.dart';
+>>>>>>> e3df41014954127475fd1159be8df3c070e0080e
 import 'package:main_practice/localization/l10n/generated/l10n.dart';
 import 'package:provider/provider.dart';
 

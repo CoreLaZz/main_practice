@@ -1,4 +1,8 @@
 {
+  "@@locale": "en",
+  "language": "Language",
+  "english": "English",
+  "khmer": "Khmer",
   "home_nav": "Home",
   "home_title": "Home",
   "home_welcome": "Welcome to Home Screen!",
@@ -10,9 +14,5 @@
   "profile_welcome": "Welcome to your profile!",
   "logout": "Logout",
   "setting_nav": "Setting",
-  "settings_title": "Settings",
-  "@@locale": "en",
-  "language": "Language",
-  "english": "English",
-  "khmer": "Khmer"
+  "settings_title": "Settings"
 }
