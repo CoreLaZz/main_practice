@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:main_practice/features/_widgets/nav_bottom.dart';
 import 'package:main_practice/features/auth/login/presentation/screen/login_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -10,7 +11,8 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _confirmPasswordController = TextEditingController();
+  final TextEditingController _confirmPasswordController =
+      TextEditingController();
   String? _errorMessage;
 
   Future<void> _register() async {
@@ -37,7 +39,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
         email: email,
         password: password,
       );
-      Navigator.pop(context); // Go back to login page
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => NavBottomPage()),
+      );
     } catch (e) {
       setState(() {
         _errorMessage = e.toString();
