@@ -1,8 +1,4 @@
 {
-  "@@locale": "km",
-  "language": "ភាសា",
-  "english": "អង់គ្លេស",
-  "khmer": "ខ្មែរ",
   "home_nav": "ទំព័រដើម",
   "home_title": "ទំព័រដើម",
   "home_welcome": "សូមស្វាគមន៍មកកាន់ទំព័រដើម!",
@@ -14,5 +10,9 @@
   "profile_welcome": "សូមស្វាគមន៍ទៅកាន់ប្រវត្តិរូបរបស់អ្នក!",
   "logout": "ចាកចេញ",
   "setting_nav": "កំណត់",
-  "settings_title": "ការកំណត់"
+  "settings_title": "ការកំណត់",
+  "@@locale": "km",
+  "language": "ភាសា",
+  "english": "អង់គ្លេស",
+  "khmer": "ខ្មែរ"
 }
