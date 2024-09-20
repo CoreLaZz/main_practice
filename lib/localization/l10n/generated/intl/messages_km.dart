@@ -29,10 +29,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("សូមស្វាគមន៍មកកាន់ទំព័រដើម!"),
         "khmer": MessageLookupByLibrary.simpleMessage("ខ្មែរ"),
         "language": MessageLookupByLibrary.simpleMessage("ភាសា"),
+        "logout": MessageLookupByLibrary.simpleMessage("ចាកចេញ"),
         "product_nav": MessageLookupByLibrary.simpleMessage("ផលិតផល"),
         "product_title": MessageLookupByLibrary.simpleMessage("ផលិតផល"),
         "product_welcome": MessageLookupByLibrary.simpleMessage(
             "សូមស្វាគមន៍មកកាន់ផ្ទាំងផលិតផល!"),
+        "profile_nav": MessageLookupByLibrary.simpleMessage("ប្រវត្តិរូប"),
+        "profile_title": MessageLookupByLibrary.simpleMessage("ប្រវត្តិរូប"),
+        "profile_welcome": MessageLookupByLibrary.simpleMessage(
+            "សូមស្វាគមន៍ទៅកាន់ប្រវត្តិរូបរបស់អ្នក!"),
         "setting_nav": MessageLookupByLibrary.simpleMessage("កំណត់"),
         "settings_title": MessageLookupByLibrary.simpleMessage("ការកំណត់")
       };

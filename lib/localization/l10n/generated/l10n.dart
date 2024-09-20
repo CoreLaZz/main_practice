@@ -50,36 +50,6 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Language`
-  String get language {
-    return Intl.message(
-      'Language',
-      name: 'language',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `English`
-  String get english {
-    return Intl.message(
-      'English',
-      name: 'english',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Khmer`
-  String get khmer {
-    return Intl.message(
-      'Khmer',
-      name: 'khmer',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Home`
   String get home_nav {
     return Intl.message(
@@ -140,6 +110,46 @@ class S {
     );
   }
 
+  /// `Profile`
+  String get profile_nav {
+    return Intl.message(
+      'Profile',
+      name: 'profile_nav',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile_title {
+    return Intl.message(
+      'Profile',
+      name: 'profile_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to your profile!`
+  String get profile_welcome {
+    return Intl.message(
+      'Welcome to your profile!',
+      name: 'profile_welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get logout {
+    return Intl.message(
+      'Logout',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Setting`
   String get setting_nav {
     return Intl.message(
@@ -155,6 +165,36 @@ class S {
     return Intl.message(
       'Settings',
       name: 'settings_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Language`
+  String get language {
+    return Intl.message(
+      'Language',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `English`
+  String get english {
+    return Intl.message(
+      'English',
+      name: 'english',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Khmer`
+  String get khmer {
+    return Intl.message(
+      'Khmer',
+      name: 'khmer',
       desc: '',
       args: [],
     );

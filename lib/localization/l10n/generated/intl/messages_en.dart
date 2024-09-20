@@ -29,10 +29,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Welcome to Home Screen!"),
         "khmer": MessageLookupByLibrary.simpleMessage("Khmer"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
+        "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "product_nav": MessageLookupByLibrary.simpleMessage("Product"),
         "product_title": MessageLookupByLibrary.simpleMessage("Products"),
         "product_welcome":
             MessageLookupByLibrary.simpleMessage("Welcome to Product Screen!"),
+        "profile_nav": MessageLookupByLibrary.simpleMessage("Profile"),
+        "profile_title": MessageLookupByLibrary.simpleMessage("Profile"),
+        "profile_welcome":
+            MessageLookupByLibrary.simpleMessage("Welcome to your profile!"),
         "setting_nav": MessageLookupByLibrary.simpleMessage("Setting"),
         "settings_title": MessageLookupByLibrary.simpleMessage("Settings")
       };

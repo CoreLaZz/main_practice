@@ -1,14 +1,18 @@
 {
-  "@@locale": "en",
-  "language": "Language",
-  "english": "English",
-  "khmer": "Khmer",
   "home_nav": "Home",
   "home_title": "Home",
   "home_welcome": "Welcome to Home Screen!",
   "product_nav": "Product",
   "product_title": "Products",
   "product_welcome": "Welcome to Product Screen!",
+  "profile_nav": "Profile",
+  "profile_title": "Profile",
+  "profile_welcome": "Welcome to your profile!",
+  "logout": "Logout",
   "setting_nav": "Setting",
-  "settings_title": "Settings"
+  "settings_title": "Settings",
+  "@@locale": "en",
+  "language": "Language",
+  "english": "English",
+  "khmer": "Khmer"
 }
